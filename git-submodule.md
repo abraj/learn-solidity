@@ -40,3 +40,11 @@ git submodule update --init --recursive
 git add .gitmodules lib/submodule
 git commit -m "Add submodule: lib/submodule"
 ```
+
+## Remve a submodule
+
+```shell
+git submodule deinit -f lib/submodule
+rm -rf .git/modules/lib/submodule
+git rm -f lib/submodule  # removes submodule entry in .gitmodules file
+```
