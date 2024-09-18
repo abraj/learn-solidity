@@ -4,3 +4,6 @@
 [submodule "lib/02"]
 	path = lib/02
 	url = git@github.com:abraj/learn-solidity-02.git
+[submodule "lib/03"]
+	path = lib/03
+	url = git@github.com:abraj/learn-solidity-03.git
