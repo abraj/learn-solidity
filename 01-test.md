@@ -2,6 +2,7 @@
 
 ```shell
 cast balance 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+cast balance 0x8858eBF9a19bAf281624E571ef8309696D991Fde --rpc-url=$SEPOLIA_RPC_URL
 ```
 
 ### Install chainlink/contracts
