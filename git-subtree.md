@@ -12,6 +12,10 @@ the overhead of submodule management.
 some subtree directory having its own submodules (i.e. has `.gitmodules` file), it
 can be difficult to work with.
 
+If you want to run the sub-directory project independently, then you may face issues
+since most projects assume independent git history. For example, running `forge build`
+in a sub-directory project fails as it's unable to find necessary git submodules somehow.
+
 ## Create a "local remote" from a local git repo
 
 ```shell

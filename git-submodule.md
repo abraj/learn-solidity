@@ -3,6 +3,10 @@
 A _git submodule_ is a separate repository within a repository, i.e. it allows git repositories
 to be nested within other separate repositories.
 
+However, this is more useful when you are consuming some repository just as a
+library. If you are doing active development/contribution on the submodule repository,
+then `git submodule` is less useful, since it performs checkout in _**detached HEAD**_ mode.
+
 A `.gitmodules` file is used in the parent repository to manage the submodules.
 A typical `.gitmodules` file looks like this:
 
