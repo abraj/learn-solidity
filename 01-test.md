@@ -30,11 +30,20 @@ forge test --fork-url $SEPOLIA_RPC_URL
 forge test --fork-url $MAINNET_RPC_URL
 ```
 
+### Run a test in _debug mode_
+
+```shell
+forge test --debug test_PriceFeedVersionIsCorrect
+```
+
 ### Check test suite coverage
 
 ```shell
 forge coverage
 forge coverage --fork-url $RPC_URL
+
+forge coverage --report debug
+forge coverage --report debug > coverage.txt
 ```
 
 ### Check gas costs
